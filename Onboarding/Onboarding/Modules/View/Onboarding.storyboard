@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="MS2-wj-B14">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="4bE-ps-uf0" customClass="OnboardingViewController" customModule="User2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Erb-C0-PxW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drE-Rs-Dti" customClass="GradientView" customModule="User2_0" customModuleProvider="target">
+                                <rect key="frame" x="153" y="-100" width="241" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.8862745098" green="0.92549019610000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.37254901959999998" green="0.5568627451" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-W0-LsJ" customClass="GradientView" customModule="User2_0" customModuleProvider="target">
+                                <rect key="frame" x="350" y="114" width="114" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.38823529410000002" green="0.70588235290000001" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.96078431369999995" green="0.99215686270000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="uwH-Uj-yxX">
+                                <rect key="frame" x="0.0" y="282.5" width="414" height="341"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vgk-TG-ktx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="208" id="xGE-k3-zbq"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="hv7-Tr-zX8">
+                                            <size key="itemSize" width="375" height="208"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="puU-Bt-Y5g">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o0J-0A-iWv">
+                                        <rect key="frame" x="0.0" y="248" width="414" height="93"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Выбрать автомобиль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnV-i8-A2k">
+                                                <rect key="frame" x="102.5" y="0.0" width="209" height="42"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" red="0.1960784314" green="0.23529411759999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы выбираете машину по параметрам грузоподъёмности, размеров и типа кузова." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wya-h6-KLk">
+                                                <rect key="frame" x="28" y="52" width="358" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.1960784314" green="0.23529411759999999" blue="0.36470588240000001" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="93" id="rtO-fx-uj8"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="g8D-Wv-XPq">
+                                <rect key="frame" x="114.5" y="653.5" width="185" height="91"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pf3-Je-22o">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="40"/>
+                                        <color key="backgroundColor" red="0.98862987759999998" green="0.57445895670000002" blue="0.12041521819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="YTJ-cH-Whu"/>
+                                            <constraint firstAttribute="width" constant="185" id="v6t-cn-PoH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Далее">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="4bE-ps-uf0" eventType="touchUpInside" id="cIk-Uh-bHS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKI-Di-WRK">
+                                        <rect key="frame" x="36.5" y="55" width="112" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="SDi-am-hXD"/>
+                                            <constraint firstAttribute="width" constant="112" id="aVM-uR-I83"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <state key="normal" title="Пропустить">
+                                            <color key="titleColor" red="0.1960784314" green="0.23529411759999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skipButtonPressed:" destination="4bE-ps-uf0" eventType="touchUpInside" id="VnE-Ec-dn1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtM-B4-Zbt" customClass="PillPageControl" customModule="User2_0" customModuleProvider="target">
+                                <rect key="frame" x="57.5" y="64" width="299" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="dm5-UR-Ttn"/>
+                                    <constraint firstAttribute="width" constant="299" id="g15-Eh-Kw2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="pillSize">
+                                        <size key="value" width="95" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveTint">
+                                        <color key="value" red="0.87450980389999999" green="0.90196078430000004" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeTint">
+                                        <color key="value" red="0.25490196079999999" green="0.4549019608" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g8D-Wv-XPq" firstAttribute="centerX" secondItem="OYi-bV-WIC" secondAttribute="centerX" id="4l1-9p-D8C"/>
+                            <constraint firstItem="XtM-B4-Zbt" firstAttribute="top" secondItem="OYi-bV-WIC" secondAttribute="top" constant="20" id="AyD-2a-Gri"/>
+                            <constraint firstItem="XtM-B4-Zbt" firstAttribute="centerX" secondItem="OYi-bV-WIC" secondAttribute="centerX" id="XRg-EE-JC6"/>
+                            <constraint firstAttribute="trailing" secondItem="uwH-Uj-yxX" secondAttribute="trailing" id="YMY-bc-7My"/>
+                            <constraint firstItem="uwH-Uj-yxX" firstAttribute="leading" secondItem="OYi-bV-WIC" secondAttribute="leading" id="hIQ-Ph-kHK"/>
+                            <constraint firstItem="g8D-Wv-XPq" firstAttribute="top" secondItem="uwH-Uj-yxX" secondAttribute="bottom" constant="30" id="iPj-5d-Pk0"/>
+                            <constraint firstItem="uwH-Uj-yxX" firstAttribute="centerX" secondItem="OYi-bV-WIC" secondAttribute="centerX" id="s0x-EW-HaQ"/>
+                            <constraint firstItem="uwH-Uj-yxX" firstAttribute="centerY" secondItem="OYi-bV-WIC" secondAttribute="centerY" id="tmt-XP-gUC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OYi-bV-WIC"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="blueBubble" destination="drE-Rs-Dti" id="tAk-91-5w8"/>
+                        <outlet property="collectionView" destination="vgk-TG-ktx" id="fP1-iZ-mFO"/>
+                        <outlet property="greenBubble" destination="zDV-W0-LsJ" id="8tT-ZC-5me"/>
+                        <outlet property="nextButton" destination="Pf3-Je-22o" id="baP-Cz-OWT"/>
+                        <outlet property="pageControl" destination="XtM-B4-Zbt" id="maW-a2-dXP"/>
+                        <outlet property="skipButton" destination="DKI-Di-WRK" id="5ZX-lt-Fky"/>
+                        <outlet property="spaceBetweenStacks" destination="iPj-5d-Pk0" id="W0z-SW-8Kz"/>
+                        <outlet property="stackViewWithButtons" destination="g8D-Wv-XPq" id="2Vc-sh-awe"/>
+                        <outlet property="stackViewWithCollectionView" destination="uwH-Uj-yxX" id="VWG-22-dPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWq-qk-Fit" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Rv1-dh-Ww4" customClass="OnboardingModuleInitializer" customModule="User2_0" customModuleProvider="target">
+                    <connections>
+                        <outlet property="onboardingViewController" destination="4bE-ps-uf0" id="Ar1-Rq-7RT"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="229.59999999999999" y="165.06746626686657"/>
+        </scene>
+    </scenes>
+</document>
